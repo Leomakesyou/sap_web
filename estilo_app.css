@@ -1,0 +1,89 @@
+@font-face
+	{
+		font-family: "letra1";
+			src: url("Mothproof_Script-webfont.eot");
+			src: url("Mothproof_Script-webfont.eot?#solotexto") format("embedded-opentype"),
+			url("Mothproof_Script-webfont.woff") format("woff"),
+			url("Mothproof_Script-webfont.ttf") format("truetype"),
+			url("Mothproof_Script-webfont.svg#webfontgfA0eZ2f") format("svg");
+	}
+
+@font-face
+	{
+		font-family: "letra2";
+			src: url("Days-webfont.eot");
+			src: url("Days-webfont.eot?#solotexto") format("embedded-opentype"),
+			url("Days-webfont.woff") format("woff"),
+			url("Days-webfont.ttf") format("truetype"),
+			url("Days-webfont.svg#webfontgfA0eZ2f") format("svg");
+	}
+
+body{
+	margin:2px;
+	padding: 2px;
+}
+
+.campo_datos{
+	background-color: #DDD;
+	margin: 2px;
+	padding: 2px;
+/*	width:70%;*/
+}
+
+.campo_label{
+	background-color: #fff;
+	font-family: Arial;
+	font-size: 10px;
+	margin: 2px;
+	padding: 2px;
+}
+.tabla_form{
+	border: solid 2px;
+	border-color: #000;
+	margin:2px;
+	padding: 2px;
+	width: 100%;
+}
+
+.tabla_form tr{
+	margin:1px;
+	padding: 1px;
+}
+
+.tabla_form td{
+	margin:1px;
+	padding: 2px;
+}
+
+.tabla_sub1{
+	border: solid 1px;
+	border-color: #aaa;
+	margin:1px;
+	padding:1px;
+	width: 100%;
+}
+
+.tabla_sub1 tr{
+	margin:1px;
+	padding: 1px;
+}
+
+.tabla_sub1 td{
+	border: solid 1px;
+	border-color: #ccc;
+	margin:2px;
+	padding: 1px;
+}
+
+#titulo_app{
+			background-color: #ccc;
+			border: solid 1px;
+			border-color: #000;
+			color: #1A50B8;
+			font-family: "letra2", arial;
+			font-size: 1em;
+			margin: 5px;
+			padding: 5px;
+			position: fixed;
+			width: 97%;
+		}

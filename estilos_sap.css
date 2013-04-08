@@ -1,0 +1,202 @@
+/* Estilos de SAP  */
+/*
+Colores de Interfaz
+azul:  		#254489
+amarillo:	#fef09e
+gris:		#f1eae1
+*/
+.boton_submit{
+	background: #ffee9f;
+	border-radius: 2px;
+	border: solid 1.2px;
+	color: #000000;
+	font-family: "verdana", "Arial";
+	font-size: 12px;
+	margin: 10px;
+	padding: 10px;
+	width:10%;
+	
+}
+.subtitulo{
+	background:#254489;
+	border-radius: 0.2em;
+	color: #cccccc;
+	font-family: "Arial";
+	font-size: 1.2em;
+	font-style: small-caps;
+	margin: 2px;
+	padding: 5px;
+	behavior: url(ie-css3.htc);
+}
+
+.tabla_detalle{
+	background: #d9e5f2;
+	border: solid 1px;
+	height: 300px; /*  300 */
+	margin: 2px, 2px, 2px, 10px;
+	overflow: scroll;
+	overflow-x: scroll; 
+	padding: 2px;
+	position: embebed;
+	width: 8000px;
+	behavior: url(ie-css3.htc);
+}
+
+.tabla_detalle{
+	background: #d9e5f2;
+	border: solid 1px;
+	margin: 2px, 2px, 2px, 10px;
+	overflow: scroll;
+	overflow-x: scroll; 
+	padding: 2px;
+	position: embebed;
+	width: 8000px;
+	behavior: url(ie-css3.htc);
+}
+
+.tabla_lineas{
+	
+	border: solid 0px;
+	height: 1000px; /*  300 */
+	margin: 1px, 1px, 1px, 1px;
+	height: 360px;
+	width: 1100px;   
+    overflow: auto;    
+    position: relative;
+	padding: 2px;
+	behavior: url(ie-css3.htc);
+}
+
+.tabla_pedido{
+	background: #f1eae1;
+	border: 1px;
+	border-radius: 0.5em;
+	border-color: #ff33cc;
+	font-family: "Helvetica";
+	font-size: 1em;
+	width: 98%;
+}
+.tabla_smc{
+	background: #f1eae1;
+	border: 1px;
+	border-radius: 0.5em;
+	border-color: #ff33cc;
+	font-family: "Helvetica";
+	font-size: 1em;
+	width: 98%;
+}
+.Tabla_Pie_Derechos {
+	background: #FFFFFF;
+	font: normal 10px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-right: 1px; 
+	padding-left: 1px; 
+	padding-bottom: 1px; 
+	padding-top: 1px; 
+}
+
+
+.titulo_matriz {
+	/*border: 1px solid;
+	border-collapse:collapse; */
+	background: #d9e5f2;
+	color: black;
+	font-style: small-caps;
+	font-size: 12px;
+	margin: 2px;
+	padding: 5px;
+}
+.matriz_campo {
+	background: #ffffff;
+	color: black;
+	font-style: small-caps;
+	font-size: 12px;
+	margin: 2px;
+	padding: 2px;
+	width: 156px;
+}
+
+.matriz_campo input{
+	border-radius: 0.5;
+	color: #000000;
+	font-family: "Arial";
+	font-size: 12px;
+	margin:1px;
+	padding:1px;
+}
+
+#campo1{
+	border-radius: 0.2em;
+	background: #f1eae1;
+	color: black;
+	margin: 2px;
+	padding: 2px;
+	width: 300px;
+}
+#campo1 input{
+	border-radius: 0.2em;
+	background: #ffffff;
+	color: black;
+	margin: 2px;
+	padding: 2px;
+
+}
+#descriptiontxt{
+	border-radius: 0.2em;
+	background: #f1eae1;
+	color: black;
+	height: 150px;
+	margin: 2px;
+	padding: 2px;
+	width: 90%;
+}
+#descriptiontxt input{
+	border-radius: 0.2em;
+	background: #ffffff;
+	color: black;
+	height: 150px;
+	margin: 2px;
+	padding: 2px;
+	width: 90%;
+}
+#label1{
+	background: #f1eae1;
+	color: black;
+	margin: 2px;
+	padding: 2px;
+	width: 200px;
+}
+#label1_u{
+	background: #f1eae1;
+	color: black;
+	margin: 2px;
+	padding: 2px;
+	
+}
+
+#pedido {
+	color:black;
+	margin: 10px;
+	padding: 2px;
+	width: 100%;
+}
+
+#pedido input{
+	margin: 2px;
+	padding: 2px;
+}
+#smc {
+	color:black;
+	margin: 10px;
+	padding: 2px;
+	width: 100%;
+}
+
+#smc input{
+	margin: 2px;
+	padding: 2px;
+}
+

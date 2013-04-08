@@ -1,0 +1,696 @@
+/* ESTILOS EN USO DEFINITIVO */
+
+
+/*
+Azul:	 	#10298C
+Verde:	 	#008431
+Amarillo:	#FFEC08
+Gris:		#DEDBB2	
+*/
+
+/* GENERALES */
+
+BODY {
+	font: normal 11px Helvetica, Verdana, Arial, sans-serif;
+	text-decoration: none;
+	/*background-image: url(../imagenes/simbolo.jpg);*/
+}
+
+/* Botones */
+.Boton {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #10298C;
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #10298C;
+}
+
+.Boton_Submit {
+	font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+	color: White;
+	background: #005CBC; /* 008431 */
+	border-right: 1px solid; 
+	border-top: 1px solid; 
+	border-left: 1px solid; 
+	border-bottom: 1px solid; 
+	border-color: #000000;
+	padding: 5px;
+}
+
+/* Copyright */
+/* Enlaces */
+a.Enlace_Pie:link, a.Enlace_Pie:visited {
+	font: bold 10px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333366;
+}
+
+a.Enlace_Pie:hover, a.Enlace_Pie:active {
+	font: bold 10px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FF6600;
+}
+
+/* Tablas*/
+.Tabla_Pie_Derechos {
+	background: #FFFFFF;
+	font: normal 10px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-right: 1px; 
+	padding-left: 1px; 
+	padding-bottom: 1px; 
+	padding-top: 1px; 
+}
+/* Fin Copyright */
+
+/* Ventanas Login, Fin, Error, Etiquetas y Datos Formularios */
+/* Enlaces */
+a.Enlace_Mail:link, a.Enlace_Mail:visited	{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;	
+	color: #10298C;
+	text-decoration: none;
+}
+
+a.Enlace_Mail:hover	{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;	
+	color: #666666;
+	text-decoration: none;
+}
+
+/* Tablas */
+.Tabla_Encabezado {
+	border: 1pt solid #999999;
+	background-image: url(../imagenes/admon_general_bancomp.gif);
+}
+
+/*  Azul fuerte: #10298C; */
+/* Azul Outlook: #005CBC; */
+/* Amarillo	   : #FFFC8A; */
+.Tabla_Titulo {
+	border-radius: 5px;
+	background: #005CBC;
+	font: bold 13pt Helvetica, Verdana, Arial, sans-serif;
+	margin: 2px;
+	padding: 5px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.Tabla_SubTitulo {
+	background: #333366;
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.Tabla_SubTitulo_Resalte {
+	background: #FFEC08;
+	font: bold 10pt Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFEE;
+}
+
+.contenedor{
+	
+}
+
+.Tabla_Label {
+	border-color: #ccc;
+	border: 0.5px solid;
+	border-radius: 10px;
+	/*background: #EAF1F6;  /* #F4FD8A; */
+	font: 12pt Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000;
+	height: 20px;
+	padding: 4px;
+	margin: 4px;
+}
+
+.Tabla_Datos {
+	background: #FFFFEE; /* FFFFEE */
+	font: normal 8pt Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	height: 20px;
+}
+
+.Tabla_Datos input{
+	border-radius: 2px;
+	background: #FEF09E;
+	border: 1px solid;
+	font: normal 10pt Verdana, Arial, Helvetica, sans-serif;
+	margin: 2px;
+	padding: 3px;
+}
+
+.Tabla_Tres {
+	background: #005CBC;
+	border: 1pt solid #999999;
+}
+
+.Tabla_Fecha_Noticia {
+	font: normal 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+.Tabla_Titulo_Noticia {
+	font: bold 11pt Verdana, Arial, Helvetica, sans-serif;
+	color: #F58A32;
+	height: 30px;
+	vertical-align: top;
+}
+
+.Tabla_Resumen_Noticia {
+	font: bold 9pt Verdana, Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+
+/* Fin Ventanas Login, Fin, Error, Etiquetas y Datos formularios */
+
+
+/* FIN GENERALES */
+
+/*****************************************************************************************/
+
+/* FRAME SUPERIOR */
+/* Enlaces */
+a.Enlace_Header:link, a.Enlace_Header:visited, a.Enlace_Header:active	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: Black;
+	text-decoration: none;
+}
+
+a.Enlace_Header:hover	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #666666;
+	text-decoration: none;
+}
+
+a.Enlace_Modulo_Header:link, a.Enlace_Modulo_Header:visited, a.Enlace_Modulo_Header:active {
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: Black;
+	text-decoration: none;
+}
+
+a.Enlace_Modulo_Header:hover	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #666666;
+	text-decoration: none;
+}
+
+a.Enlace_Modulo_Seleccion_Header:link, a.Enlace_Modulo_Seleccion_Header:visited, a.Enlace_Modulo_Seleccion_Header:active	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: White;
+	text-decoration: none;
+}
+
+/* Tablas */
+.Tabla_Uno_Header {
+	border: 1pt solid #999999;
+	background-image: url(../imagenes/header_bg.gif);
+}
+
+.Tabla_Dos_Header {
+	background: #FFFFFF;
+}
+
+.Tabla_Tres_Header {
+	padding-left: 12px;
+	background: #00488F;
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	border-bottom: #000000 1px solid; 	
+}
+
+.Tabla_Espacio_Header {
+	background-image: url(../imagenes/spacer.gif);
+	padding-left: 7px;
+}
+
+.Tabla_Espacio_Dos_Header {
+	background-image: url(../imagenes/spacer.gif);
+}
+
+.Tabla_Izquierda_Header {
+	background-image: url(../imagenes/otherTab_left.gif);
+}
+
+.Tabla_Centro_Header {
+	background-image: url(../imagenes/otherTab_middle.gif);
+}
+
+.Tabla_Derecha_Header {
+	background-image: url(../imagenes/otherTab_right.gif);
+}
+
+.Tabla_Izquierda_Seleccion_Header {
+	background-image: url(../imagenes/currentTab_left.gif);
+}
+
+.Tabla_Centro_Seleccion_Header {
+	background-image: url(../imagenes/currentTab_middle.gif);
+}
+
+.Tabla_Derecha_Seleccion_Header {
+	background-image: url(../imagenes/currentTab_right.gif);
+}
+/* FIN FRAME SUPERIOR */
+
+/*****************************************************************************************/
+
+/* FRAME IZQUIERDO */
+/* Enlaces */
+a.Enlace_Menu:link, a.Enlace_Menu:visited, a.Enlace_Menu:active 	{
+	font: bold 9pt Verdana, Arial, Helvetica, sans-serif;	
+	color: White;
+	text-decoration: none;
+}
+
+a.Enlace_Menu:hover	{
+	font: bold 9pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #FFFFEE;
+	text-decoration: none;
+}
+
+/* Tablas */
+.Tabla_Izquierda_Menu {
+	background-image: url(../imagenes/moduleTab_left.gif);
+	text-align: center;
+}
+
+.Tabla_Centro_Menu {
+	background-image: url(../imagenes/moduleTab_middle.gif);
+	text-align: center;
+}
+
+.Tabla_Derecha_Menu {
+	background-image: url(../imagenes/moduleTab_right.gif);
+	text-align: center;
+}
+
+.Tabla_Opciones_Menu {
+	border-bottom: #10298C 2px solid;
+}
+
+.Tabla_Espacio_Menu {
+	background-image: url(../imagenes/spacer.gif);
+}
+
+.Tabla_Principal_Menu {
+	border: 1px solid #999999;
+	padding-right: 2px; 
+	padding-left: 2px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+}
+
+.Tabla_Contexto_Menu {
+	background-color: #EEEECC;
+	border: 1px solid #10298C;
+	color: #000000;
+	padding-right: 2px; 
+	padding-left: 2px; 
+	padding-bottom: 2px; 
+	padding-top: 2px; 
+}
+
+.Tabla_Titulo_Menu {
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #cc6600;
+	border-left: #CCCCCC 1px solid; 	
+	border-right: #CCCCCC 1px solid;
+	border-bottom: #CCCCCC 1px solid; 
+	background-color: #FFFFEE;
+}
+
+/* FIN FRAME IZQUIERDO */
+
+/*****************************************************************************************/
+
+/* FRAME DERECHA */
+/* divs o capas */
+div.Oculto {
+	visibility:hidden; 
+	position:absolute
+} 
+
+div.Visible {
+	visibility:visible; 
+	position:absolute
+} 
+
+.mensaje_progreso {
+  background-color: #D3D3D3;
+  border-color: #999999 #999999 #999999 #999999;
+  border-style: solid;
+  border-width: 2px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  font: bold 11px Verdana, Arial, Helvetica, sans-serif;  
+  color: #000080;
+}
+
+
+/* Formularios */
+FORM {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px;
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color: White;
+}
+
+SELECT {
+	border-right: #999999 1px solid; 
+	border-top: #999999 1px solid; 
+	border-left: #999999 1px solid; 
+	border-bottom: #999999 1px solid; 
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+}
+
+TEXTAREA {
+	border-right: #999999 1px solid; 
+	border-top: #999999 1px solid; 
+	border-left: #999999 1px solid; 
+	border-bottom: #999999 1px solid; 
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+}
+
+INPUT {
+	border-right: #999999 1px solid; 
+	border-top: #999999 1px solid; 
+	border-left: #999999 1px solid; 
+	border-bottom: #999999 1px solid; 
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+}
+
+.Text_Contador {
+	border-right: 1px solid; 
+	border-top: 1px solid; 
+	border-left: 1px solid; 
+	border-bottom: 1px solid; 
+	background-color: #f5f5f5;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color : Red;
+	text-align: right;
+}
+
+.Text_Numero {
+	border-right: 1px solid; 
+	border-top: 1px solid; 
+	border-left: 1px solid; 
+	border-bottom: 1px solid; 
+	background-color: #f5f5f5;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color : #090BFF;
+	text-align: right;
+}
+
+/* Tablas */
+.Tabla_Uno {
+	background: #EAF1F6;
+	border: #999999 1px solid;
+	border-radius: 5px; 
+	padding-left: 4px; 
+	padding-top: 4px; 
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+.Tabla_Dos {
+	border: #CCCCCC 1px solid; 
+	padding-left:4px; 
+	padding-top: 4px; 
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+.Tabla_Titulo_Nivel {
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #cc6600;
+	border-left: #CCCCCC 1px solid;
+	border-right: #CCCCCC 1px solid;
+	border-bottom: #CCCCCC 1px solid;
+	background-color: #FFFFEE;
+	padding-left: 3px; 
+	padding-top: 3px; 
+	padding-right: 3px;
+	padding-bottom: 3px;
+}
+
+.Tabla_Subtitulo_Nivel {
+	border-right: #CCCCCC 1px solid; 
+	border-left: #CCCCCC 1px solid; 
+	border-bottom: #CCCCCC 1px solid;
+	padding-left: 4px; 
+	padding-top: 4px; 
+	padding-right: 4px;
+	padding-bottom: 4px;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;	
+	color: #000080; 
+}
+
+.Tabla_Subtitulo_Nivel_Interno {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: left;
+	background-color: #FFFF99;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.Tabla_Titulo_Aplicacion {
+	border-right: #CCCCCC 1px solid; 
+	border-left: #CCCCCC 1px solid; 
+	border-bottom: #CCCCCC 1px solid;
+	padding: 4px;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;	
+	color: #cc6600; 
+	background-color: #FFFFEE;
+}
+
+.Tabla_Espacio {
+	background-image: url(../imagenes/spacer.gif);
+}
+
+.Tabla_Izquierda_Boton {
+	background-image: url(../imagenes/moduleTab_left.gif);
+	text-align: center;
+}
+
+.Tabla_Centro_Boton {
+	background-image: url(../imagenes/moduleTab_middle.gif);
+	text-align: center;
+}
+
+.Tabla_Derecha_Boton {
+	background-image: url(../imagenes/moduleTab_right.gif);
+	text-align: center;
+}
+
+.Tabla_Opciones_Boton {
+	border-bottom: #10298C 2px solid;
+	padding-top: 2px; 
+}
+
+.Tabla_Izquierda_Formulario {
+	background-image: url(../imagenes/otherTab_left.gif);
+}
+
+.Tabla_Centro_Formulario {
+	background-image: url(../imagenes/otherTab_middle.gif);
+}
+
+.Tabla_Derecha_Formulario {
+	background-image: url(../imagenes/otherTab_right.gif);
+}
+
+.Tabla_Opciones_Formulario {
+	border-bottom: #999933 1px solid;	
+	text-align: right;
+	padding-top: 4px;
+}
+
+.Tabla_Superior_Paginacion {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: right;
+	background-color: #ecf6ff;	
+	border-right: #10298C 1px solid; 
+	border-top: #10298C 1px solid; 
+	border-left: #10298C 1px solid; 
+	border-bottom: #10298C 1px solid; 
+	padding-left: 2px; 
+	padding-right: 2px; 
+	padding-top: 2px; 
+	padding-bottom: 2px;
+}
+
+.Tabla_Columna_Paginacion {
+	background: #006699;
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: left;
+	border-top: #006699 1px solid;
+	border-bottom: #006699 1px solid;
+	text-align: center;
+}
+
+.Tabla_Fila_Paginacion {
+	background: #FFFFEE;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	border-bottom: 3px solid #EEEECC;
+	text-align: center;
+}
+
+/* Texto */
+.Subtitulo_Nivel {
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;	
+	color: #4d95dd; 
+}
+
+.Subtitulo_Aplicacion {
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #4d95dd; 
+}
+
+.Enlace_Paginacion	
+{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: Black;
+	text-decoration: none;
+}
+
+.Texto_Izquierda {
+	text-align: left;
+}
+
+.Texto_Centro {
+  text-align: center;
+}
+
+.Texto_Derecha {
+	text-align: right;
+}
+
+.Texto_Justificado {
+	text-align: justify;
+}
+
+.Texto_Numero {
+  text-align: right;
+}
+
+
+.Texto_Fecha {
+  text-align: center;
+}
+
+
+/* Enlaces */
+a.Enlace_Superior:link, a.Enlace_Superior:visited, a.Enlace_Superior:active {
+	font: bold 9px Verdana, Arial, Helvetica, sans-serif;	
+	color: #000000;
+	text-decoration: none;
+}
+
+a.Enlace_Superior:hover	{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;	
+	color: #666666;
+	text-decoration: none;
+}
+
+a.Enlace_Boton:link, a.Enlace_Boton:visited, a.Enlace_Boton:active 	{
+	font: bold 9pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.Enlace_Boton:hover	{
+	font: bold 9pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #FFFFEE;
+	text-decoration: none;
+}
+
+a.Enlace_Capas:link, a.Enlace_Capas:visited, a.Enlace_Capas:active 	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	vertical-align: super;
+}
+
+a.Enlace_Capas:hover	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;	
+	color: #FF6600;
+	text-decoration: none;
+	vertical-align: super;
+}
+
+a.Enlace_Formulario:link, a.Enlace_Formulario:visited	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #10298C;
+	text-decoration: none;
+}
+
+a.Enlace_Formulario:hover, a.Enlace_Formulario:active	{
+	font: bold 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.Enlace_Columna_Paginacion:link, a.Enlace_Columna_Paginacion:visited, a.Enlace_Columna_Paginacion:active	
+{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.Enlace_Columna_Paginacion:hover	{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FEFF7B;
+	text-decoration: none;
+}
+
+a.Enlace_Paginacion_Seleccion:link, a.Enlace_Paginacion_Seleccion:visited, a.Enlace_Paginacion_Seleccion:active	
+{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #10298C;
+	text-decoration: none;
+}
+
+a.Enlace_Paginacion_Seleccion:hover	{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;	
+	color: #FF6600;
+	text-decoration: none;
+}
+
+/* FIN FRAME DERECHA */
+
+/*****************************************************************************************/
+
+/* FIN ESTILOS EN USO DEFINITIVO */
+

@@ -1,0 +1,376 @@
+<?php session_start();
+ header("Cache-control: no-cache");
+ require_once('conexion/conf.php');
+ require_once ('conexion/adodb.inc.php'); 
+ include ('conexion/dbm.php');
+ //Para los enlaces de combobox/////////////////
+ include("includes/funciones.inc.php");
+ include("includes/claseRecordset.inc.php"); 
+ include("includes/conexion.inc.php");
+ ///////////////////////////////////////////////
+//conexión
+$conexionMysql = new ConectarMysql($gloDbDriver, $gloDbHost, $gloDb, $gloDbUser, $gloDbPassword);
+
+$idioma = $_SESSION['idioma'];
+$ArchivoLangaje = "config/lenguaje/" . $idioma . ".php";
+include ($ArchivoLangaje); 
+$ArchivoScripts = "javascript/scripts.php";
+include ($ArchivoScripts);
+
+$login = $_GET['login'];
+
+?>
+
+<SCRIPT type="text/javascript">
+	   
+	   function valida_campos() 
+		{
+			
+			if (document.form.password1.value=='') 
+			{
+  				rc=alert('Ingrese el password');
+  				document.form.password1.focus();
+  				return false;
+ 			}
+ 			
+			if (document.form.password2.value=='') 
+			{
+  				rc=alert('Ingrese la confirmación del password');
+  				document.form.password2.focus();
+  				return false;
+ 			}
+			if (document.form.password1.value != document.form.password2.value) 
+			{
+  				rc=alert('Contraseña y confirmación no concuerdan');
+  				document.form.password2.focus();
+  				return false;
+ 			}
+			
+			if (document.getElementById("fortaleza").className < 4)
+			{
+				alert('El nivel de Fortaleza debe ser Mayor');
+			
+			return false;
+			}
+			
+			////////////////////////////////////////////
+			
+			
+			if (document.form.login.value == '')
+			{
+				alert('Ingrese un Login');
+				document.form.login.focus();
+				return false;
+			}
+			
+			//////////////////////////////
+			
+			if (document.form.codcia.value=='')
+			{
+				alert('Seleccione una Compañía');
+				document.form.codcia.focus();
+				return false;
+			}
+			
+			if (document.form.codsuc.value == '')
+			{
+				alert('Seleccione una Sucursal');
+				document.form.codsuc.focus();
+				return false;
+			}
+			
+			if (document.form.codarea.value=='')
+			{
+				alert('Seleccione un Área');
+				document.form.codarea.focus();
+				return false;
+			}
+			
+			if (document.form.codcargo.value=='')
+			{
+				alert('Seleccione un Cargo');
+				document.form.codcargo.focus();
+				return false;
+			}
+			
+			if (document.form.codusuario.value == '')
+			{
+				alert('Ingrese un Documento');
+				document.form.codusuario.focus();
+				return false;
+			}
+			
+			if (document.form.nomusuario.value == '')
+			{
+				alert('Ingrese un Nombre');
+				document.form.nomusuario.focus();
+				return false;
+			}
+			
+			if (document.form.codperfil.value == '')
+			{
+				alert('Seleccione un Perfil');
+				document.form.codperfil.focus();
+				return false;
+			}
+			
+			if (document.form.email.value == '')
+			{
+				alert('Ingrese un Email');
+				document.form.email.focus();
+				return false;
+			}
+			
+			if (document.form.email.value.indexOf ('@', 0) == -1 || document.cliente.email.value.indexOf ('.', 0) == -1 || document.cliente.email.value.length < 5)
+			{
+				alert("El correo electrónico es Incorrecto.")
+  				document.form.email.focus();
+				return false;
+			}
+			
+			
+			return true;
+		}
+		
+		function passwordStrength(password)
+	{
+		var desc = new Array();
+		desc[0] = "Clave muy Débil";
+		desc[1] = "Clave Débil";
+		desc[2] = "Clave Bajo";
+		desc[3] = "Clave Medio";
+		desc[4] = "Clave Fuerte";
+		desc[5] = "Clave Muy Fuerte";
+	
+		var score   = 0;
+	
+		//if password bigger than 6 give 1 point
+		if (password.length > 6) score++;
+	
+		//if password has both lower and uppercase characters give 1 point	
+		if ( ( password.match(/[a-z]/) ) && ( password.match(/[A-Z]/) ) ) score++;
+	
+		//if password has at least one number give 1 point
+		if (password.match(/\d+/)) score++;
+	
+		//if password has at least one special caracther give 1 point
+		if ( password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/) )	score++;
+	
+		//if password bigger than 12 give another 1 point
+		if (password.length >= 12) score++;
+	
+		 document.getElementById("passwordDescription").innerHTML = desc[score];
+		 document.getElementById("passwordDescription").className = "passwordText";
+		 document.getElementById("passwordStrength").className = "strength" + score;
+		 document.getElementById("fortaleza").className = score;
+		// alert('Puntaje: '+score);
+		 return score;
+	}
+		
+		function carga ()
+		{
+					//
+					//alert("Var  " + <?= $feclimite; ?>);
+//					alert("Login " + <?= $login; ?>);
+		}
+		
+
+</script>
+
+<html>
+<head>
+<title>Cambiar Clave</title>
+<script language="javascript">
+	
+function reloj() {
+// Obtiene la fecha actual
+var fObj = new Date() ;
+// Obtiene la hora
+var horas = fObj.getHours() ;
+// Obtiene los minutos
+var minutos = fObj.getMinutes() ;
+// Obtiene los segundos
+var segundos = fObj.getSeconds() ;
+// Si es menor o igual a 9 le concatena un 0
+if (horas <= 9) horas = "0" + horas;
+// Si es menor o igual a 9 le concatena un 0
+if (minutos <= 9) minutos = "0" + minutos;
+// Si es menor o igual a 9 le concatena un 0
+if (segundos <= 9) segundos = "0" + segundos;
+// Asigna la hora actual a la caja de texto reloj
+document.form.reloj.value = horas+":"+minutos+":"+segundos;
+}
+// Cada segundo invoca la funcion reloj()
+setInterval("reloj()",1000);
+</script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="js/mootools.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/iToolkit.js"></script>
+<script language="JavaScript" type="text/javascript">
+window.addEvent('load', PageLoad);
+function PageLoad()
+{
+	//new iToolkit.ComboEnlazado(hijo, padre, servicioDeDatos);
+	//new iToolkit.ComboEnlazado("codcargo", "codarea", "services/GetCargosPorAreas.php");
+//	new iToolkit.ComboEnlazado("cboProvincia", "cboPais", "services/GetProvinciasPorPais.php");
+}
+</script>
+</script>
+
+<LINK href="<?php echo $gloRutaPublica . "/estilos/estilo_admin.css"; ?>" type=text/css rel=stylesheet>
+	<script language="JavaScript" type="text/JavaScript" src="<?php echo $gloRutaPublica . "/javascript/Utilities.js"; ?>"></script>
+	<title><?php echo $gloNombrePublica . " " . $gloNombreCliente ?></title>
+	<style>
+	#passwordStrength {
+		height:10px;
+		display:block;
+		float:left;
+	}
+	.passwordText {
+		font-size:10px;
+		font-family:Tahoma,Verdana,Arial;
+	}
+
+	.strength0 {
+		width:150px;
+		background:#cccccc;
+	}
+	.strength1 {
+		width:30px;
+		background:#ff0000;
+	}
+	.strength2 {
+		width:60px;	
+		background:#ff5f5f;
+	}
+	.strength3 {
+		width:90px;
+		background:#56e500;
+	}
+	.strength4 {
+		background:#4dcd00;
+		width:120px;
+	}
+	.strength5 {
+		background:#399800;
+		width:150px;
+	}
+	
+	</style>
+
+	
+</head>
+<body vlink="<?= $Color_Celda2; ?>" link="<?= $Color_Celda2; ?>" onLoad="carga();">
+<br>
+
+<?php
+
+if (isset($login))
+{	//SI NO SE HAN INGRESADO DATOS
+
+$sql = "SELECT J0.* ";
+$sql = $sql . " FROM usuarios AS J0 ";
+$sql = $sql . " ";
+$sql = $sql . " ";
+$sql = $sql . " ";
+$sql = $sql . " ";
+$sql = $sql . " ";
+$sql = $sql . " ";
+$sql = $sql . " WHERE J0.login = '$login'";
+$result = $conexionMysql->db->Execute($sql);
+$row = $result->FetchNextObj();
+?>
+<form action="<?= "cclave_usu.php"; ?>" name="form" method="post" onSubmit="return valida_campos();">	
+	<table border="3" align="center" width="50%" >	
+		<tr>
+			<td colspan="4" align="center" style="background:<?= $Color_Celda2; ?>; color:#FFFFFF" >
+				
+				<b><?= $lang['ad_txt_28']; ?></b>			</td>
+		</tr>
+					<input type="hidden" name="tipodato" value="1">
+			
+		<tr>
+			<td width="40%" class="Tabla_Label">
+				<?= $lang['ad_txt_19']; ?>			</td>
+			<td width="60%">
+				<input type="text" name="codusuario" maxlength="15" value="<?= $row->codusuario; ?>" readonly>			</td>
+		</tr>
+		
+		<tr>
+			<td width="40%" class="Tabla_Label">
+				<?= $lang['ad_txt_11']; ?>			</td>
+			<td width="60%">
+				<input type="text" name="nomusuario" size="40" maxlength="60" value="<?= $row->nomusuario; ?>" readonly>			</td>
+		</tr>
+		
+		<tr>
+			<td width="40%" class="Tabla_Label">
+			<?= $lang['ad_txt_10']; ?>			</td>
+			<td width="60%">
+				<input type="text" name="login" maxlength="10" value="<?= $login; ?>" readonly>			</td>
+		</tr>
+		
+		
+		<tr>
+							<td width="50%" class="Tabla_Label"><div align="left"><?= $lang['ad_txt_22']; ?></div></td>
+                            <td width="50%" class="Tabla_Datos"><div align="left">
+							<input name='password1' type='text' id="password1" size='20' maxlength='16' onKeyUp="passwordStrength(this.value)">
+	  					    <input type="hidden" name="fortaleza" id="fortaleza">
+                            </div></td>
+                        </tr>
+						<tr>
+						  <td class="Tabla_Label"><?= $lang['ad_txt_26']; ?></td>
+						  <td>
+						  	<div id="passwordDescription"><font size="1" style="font-family:Arial, Helvetica, sans-serif">Clave no ingresada</font></div> 
+							<div id="fortaleza"></div>
+							<div id="passwordStrength" class="strength0"></div>
+						  </td>
+					  </tr>
+						<tr>
+							<td width="45%" class="Tabla_Label"><div align="left"><?= $lang['ad_txt_25']; ?></div></td>
+                            <td width="55%" class="Tabla_Datos"><div align="left"><input name='password2' type='password' id="password2" size='20' maxlength='16' >
+                            </div></td>
+                        </tr>
+		
+		
+		<tr>
+							<td colspan="2" class="Tabla_Datos"><div align="center"></div>
+							<div align="center">            					
+          					<input name="submitButton" type="submit" class="Boton_Submit" id="submitButton" style="Width: 80px;" value="<?= $lang['txt_10']; ?>" onMouseOver="javascript:mOvr(this,COLOR_BOTON_SUBMIT_ADMIN_MOUSEOVER,'','');" onMouseOut="javascript:mOut(this,COLOR_BOTON_SUBMIT_ADMIN_MOUSEOUT,'','');" tabindex="3">
+							<input type="reset" value= "<?= $lang['txt_12']; ?>" style="Width: 80px;" class="Boton_Submit" onMouseOver="javascript:mOvr(this,COLOR_BOTON_SUBMIT_ADMIN_MOUSEOVER,'','');" onMouseOut="javascript:mOut(this,COLOR_BOTON_SUBMIT_ADMIN_MOUSEOUT,'','');">
+							  </div></td>
+						</tr>
+	</table>
+</form>	
+
+
+
+<?php
+$sql = "";
+$sql = $sql . "";
+$result = $conexionMysql->db->Execute($sql);
+}	//FIN DEL IF PARA EL TIPO DE DATO NUEVO
+
+else
+{	//
+?>
+	<script language="javascript">
+		alert("sino " + <?= $codmodulo; ?>);
+	</script>
+<?php 
+}	// FIN DEL SINO 
+?>
+<br>
+<!--table border="0" align="center" >
+	<tr>
+		<td align="center" onClick="javascript:location.href='javascript:history.back()';" >
+		<img src="<? echo $gloRutaPublica . "/imagenes/volver.gif"; ?>" width="40" height="50" alt="Volver" style="cursor:pointer">
+		</td>
+	</tr>
+</table-->	
+
+<?php
+$conexionMysql->cerrar();
+?>
+</body>
+</html>
