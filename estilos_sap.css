@@ -83,7 +83,8 @@ gris:		#f1eae1
 	border-color: #ff33cc;
 	font-family: "Helvetica";
 	font-size: 1em;
-	width: 98%;
+	margin-left: 20px;
+	width: 95%;
 }
 .Tabla_Pie_Derechos {
 	background: #FFFFFF;
