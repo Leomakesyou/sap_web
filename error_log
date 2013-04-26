@@ -1,0 +1,406 @@
+[20-Mar-2013 15:42:41 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'awid'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:42:41 America/Chicago] PHP Fatal error:  Access denied for user 'awid'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:46:45 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:46:45 America/Chicago] PHP Fatal error:  Access denied for user 'leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:48:43 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:48:43 America/Chicago] PHP Fatal error:  Access denied for user 'leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:53:50 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:53:50 America/Chicago] PHP Fatal error:  Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:55:57 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:55:57 America/Chicago] PHP Fatal error:  Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:59:08 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 15:59:08 America/Chicago] PHP Fatal error:  Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:02:36 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:02:36 America/Chicago] PHP Fatal error:   in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:34:17 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:34:17 America/Chicago] PHP Fatal error:   in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:37:26 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_guest'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:37:26 America/Chicago] PHP Fatal error:   in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:38:51 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tqgroup_guest'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:38:51 America/Chicago] PHP Fatal error:  Access denied for user 'tqgroup_guest'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/index.php on line 102
+[20-Mar-2013 16:44:07 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/testhost.php on line 8
+[20-Mar-2013 16:47:58 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/testhost.php on line 8
+[20-Mar-2013 16:50:30 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/testhost.php on line 8
+[20-Mar-2013 16:50:30 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/testhost.php on line 8
+[20-Mar-2013 16:51:14 America/Chicago] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'tqgroup_leonardo'@'localhost' (using password: YES) in /home/tqgroup/public_html/sap_web/testhost.php on line 8
+[20-Mar-2013 16:53:17 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/tqgroup/public_html/sap_web/testhost.php on line 9
+[21-Mar-2013 10:58:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[21-Mar-2013 10:58:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[21-Mar-2013 11:04:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[21-Mar-2013 11:04:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[21-Mar-2013 14:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[21-Mar-2013 14:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[22-Mar-2013 19:01:11 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 384
+[22-Mar-2013 19:06:12 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 384
+[22-Mar-2013 19:06:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[22-Mar-2013 19:06:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[22-Mar-2013 19:06:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[22-Mar-2013 19:06:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[22-Mar-2013 19:07:26 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 384
+[23-Mar-2013 12:13:12 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 384
+[25-Mar-2013 17:41:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[25-Mar-2013 17:41:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 09:19:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[26-Mar-2013 09:19:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 09:19:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_percontacto.php on line 36
+[26-Mar-2013 09:19:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_numeroref.php on line 36
+[26-Mar-2013 09:22:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[26-Mar-2013 09:22:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 09:25:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_percontacto.php on line 36
+[26-Mar-2013 09:25:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_numeroref.php on line 36
+[26-Mar-2013 09:25:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_percontacto.php on line 36
+[26-Mar-2013 09:25:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_numeroref.php on line 36
+[26-Mar-2013 09:40:10 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2
+[26-Mar-2013 09:42:23 America/Chicago] PHP Parse error:  syntax error, unexpected T_REQUIRE_ONCE in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2
+[26-Mar-2013 09:45:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[26-Mar-2013 09:45:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 815
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 831
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 863
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 880
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[26-Mar-2013 09:50:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 909
+[26-Mar-2013 09:51:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[26-Mar-2013 09:51:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 815
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 831
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 863
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 880
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[26-Mar-2013 09:51:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 909
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 830
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 846
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 878
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 895
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 908
+[26-Mar-2013 10:01:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 924
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 830
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 846
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 878
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 895
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 908
+[26-Mar-2013 10:01:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 924
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 830
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 846
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 878
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 895
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 908
+[26-Mar-2013 10:03:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 924
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 832
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 848
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 880
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 910
+[26-Mar-2013 10:04:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 926
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 832
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 848
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 880
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 910
+[26-Mar-2013 10:06:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 926
+[26-Mar-2013 10:29:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[26-Mar-2013 10:29:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[26-Mar-2013 10:29:18 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 781
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 780
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 858
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 874
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 936
+[26-Mar-2013 10:36:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 952
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 780
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 858
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 874
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 936
+[26-Mar-2013 10:38:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 952
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 858
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 874
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 936
+[26-Mar-2013 11:17:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 952
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 858
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 874
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 936
+[26-Mar-2013 11:37:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 952
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 11:52:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 11:57:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 11:59:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:03:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:07:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:16:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:16:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:30:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:34:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 854
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 870
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 919
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 932
+[26-Mar-2013 12:45:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 948
+[26-Mar-2013 13:03:18 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 13:03:47 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 15:14:01 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 15:14:36 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 15:15:29 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 15:15:35 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 14
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 869
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 918
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 15:18:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 947
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 869
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 918
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 15:22:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 947
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 869
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 918
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 15:24:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 947
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 837
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 885
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 915
+[26-Mar-2013 15:32:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 837
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 885
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 915
+[26-Mar-2013 15:33:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 836
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 852
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 884
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 15:34:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 930
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 836
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 852
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 884
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 15:38:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 930
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 836
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 852
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 884
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 901
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 15:40:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 930
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 837
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 885
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 915
+[26-Mar-2013 15:43:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 837
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 853
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 885
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 915
+[26-Mar-2013 16:01:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 931
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:02:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:03:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:05:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:07:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:11:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:12:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:13:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:15:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:31:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 849
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 865
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 897
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 914
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 927
+[26-Mar-2013 16:45:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 943
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 824
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 840
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 872
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 889
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 902
+[26-Mar-2013 16:59:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 918
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[26-Mar-2013 17:12:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[27-Mar-2013 08:11:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[27-Mar-2013 08:13:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:14:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[27-Mar-2013 08:14:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[27-Mar-2013 08:15:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[27-Mar-2013 08:23:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 828
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 844
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 876
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 893
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 906
+[27-Mar-2013 08:27:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 922
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 829
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 845
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 877
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 894
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 907
+[27-Mar-2013 08:30:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[27-Mar-2013 08:45:09 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 133
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 829
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 845
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 877
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 894
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 907
+[27-Mar-2013 08:46:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 829
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 845
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 877
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 894
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 907
+[27-Mar-2013 08:50:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 923
+[27-Mar-2013 09:38:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[27-Mar-2013 09:38:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[27-Mar-2013 09:38:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_numeroref.php on line 36
+[27-Mar-2013 09:51:37 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting ']' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 87
+[27-Mar-2013 09:52:15 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting ']' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 87
+[27-Mar-2013 09:55:28 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting ']' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 87
+[27-Mar-2013 10:15:42 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/tqgroup/public_html/sap_web/insertar_smc.php on line 740
+[27-Mar-2013 10:26:35 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 25
+[27-Mar-2013 10:27:44 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 24
+[27-Mar-2013 10:28:30 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/tqgroup/public_html/sap_web/pruebafecha.php on line 25
+[27-Mar-2013 11:54:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[27-Mar-2013 11:54:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[28-Mar-2013 14:06:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[28-Mar-2013 14:06:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include(includes/claseRecordset.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 8
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include(includes/claseRecordset.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 8
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/claseRecordset.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 8
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include(includes/conexion.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 9
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include(includes/conexion.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 9
+[02-Apr-2013 08:25:14 America/Chicago] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/conexion.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tqgroup/public_html/sap_web/cclave_usu.php on line 9
+[03-Apr-2013 20:16:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[03-Apr-2013 20:16:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[09-Apr-2013 17:37:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[09-Apr-2013 17:37:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[09-Apr-2013 17:40:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[09-Apr-2013 17:40:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220
+[09-Apr-2013 23:33:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2203
+[09-Apr-2013 23:33:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/tqgroup/public_html/sap_web/insertar_pedido.php on line 2220

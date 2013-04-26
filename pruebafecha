@@ -1,0 +1,9 @@
+<?php 
+	$fecha = date("dmY");
+	$hora = date("His");
+
+
+
+	echo "<p>" .$fecha. " ".$hora."</p>";
+	
+?>

@@ -5,6 +5,7 @@ azul:  		#254489
 amarillo:	#fef09e
 gris:		#f1eae1
 */
+
 .boton_submit{
 	background: #ffee9f;
 	border-radius: 2px;
@@ -135,7 +136,7 @@ gris:		#f1eae1
 	color: black;
 	margin: 2px;
 	padding: 2px;
-	width: 300px;
+	width: 150px;
 }
 #campo1 input{
 	border-radius: 0.2em;
@@ -168,7 +169,7 @@ gris:		#f1eae1
 	color: black;
 	margin: 2px;
 	padding: 2px;
-	width: 200px;
+	width: 215px;
 }
 #label1_u{
 	background: #f1eae1;
@@ -200,4 +201,6 @@ gris:		#f1eae1
 	margin: 2px;
 	padding: 2px;
 }
-
+.tabla{
+	background-color: #D9F0F7;
+}

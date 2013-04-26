@@ -1,0 +1,28 @@
+el programa debe mostrar sueldo neto de cada empleado
+
+calcular sueldo
+
+solicitar al usuario, numero de horas trabajadas, y valor por hora
+
+nh * vh
+
+si trabaja mas de 40horas, pagarle horas extra
+
+valor hora extra vh + 5%vh
+
+ingresos
+
+
+- retefuente 3%
+
+ingresos -  descuentos
+
+40h * 1000vh = 40000ingresos - 3%(1200)descuentos = 38800
+
+
+si gana por comisión también se descuenta retefuente 
+
+
+salario basico + comisión
+
+
