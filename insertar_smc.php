@@ -359,13 +359,21 @@ exit();
 ?>
 
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<title>Crear Llamada de Servicio</title>
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">   
 	<link rel="stylesheet" href="estilos_sap.css" />
 	<link rel="stylesheet" type="text/css" href="calendar.css" />
+	<link rel="stylesheet" href="<?php echo $gloRutaPublica . "/css/normalize.min.css"; ?>">
+	<link rel="stylesheet" href="<?php echo $gloRutaPublica . "/css/main.css"; ?>">
 	<script src="jquery.js"></script>
+	<script src="<?php echo $gloRutaPublica . "/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"; ?>"></script>	
 	<script type="text/javascript" src="cal.js"></script>
 	<link href="<?php echo $gloRutaPublica . "/estilos/calendar-system.css"; ?>" rel="stylesheet" type="text/css" media="all">
 	<Script language="JavaScript" type="text/JavaScript" src="<?php echo $gloRutaPublica . "/javascript/Utilities.js"; ?>"></script>
@@ -575,7 +583,7 @@ exit();
 		</script>
 
 
-		<style>
+/*<!-- 		<style>
 		#cont_form label{
 			font-family: "Helvetica";
 			font-size: 20px;
@@ -619,401 +627,301 @@ exit();
 		}
 
 
-		</style>	
-	</head>
-	<body>
-		<?php
-		if (isset($_SESSION["sudlogin"]))
-		{
-			?>
+	</style>	 -->*/
+</head>
+<body>
+	<?php
+	if (isset($_SESSION["sudlogin"]))
+	{
+		?>
 
-			<div id="cont_form">
-				<form action="" method="post" name="formsoc" onsubmit="return validar()" > <!--  -->
-					<label>Sociedad 
-					</label>
-					<select id="selector" name="sociedad" onChange="javascript:submit()" style="width:200px;"> 
-						<option value="" ></option>
-						<?php
+		<div id="cont_form">
+			<form action="" method="post" name="formsoc" onsubmit="return validar()" > <!--  -->
+				<label>Sociedad 
+				</label>
+				<select id="selector" name="sociedad" onChange="javascript:submit()" style="width:200px;"> 
+					<option value="" ></option>
+					<?php
 	///INICIO DEL CUERPO DEL MENU ***************
-						$sql = "SELECT j0.idsoc, j0.cmpname, j0.identificador, j0.id_integra
-						FROM srgc as j0
-						Inner Join companiasxperfiles as j1 on j0.idsoc = j1.idcia
-						WHERE j0.activo = 'Y'
-						And j1.idperfil = '".$_SESSION["sudperfil"]."'"
-						;
-						$result = $conexionMysql->db->Execute($sql);
-						while ($row=$result->FetchNextObj())
-						{ 
-							if(isset($_SESSION["sudlogin"]) && $identificador <> '' ){
-								if( $row->id_integra == $identificador){
-									?>
-									<option value="<?= $row->id_integra ?>" selected><?= $row->cmpname ?></option>
-									<?php
-								}
-								else{
-									?>
-									<option value="<?= $row->id_integra ?>" ><?= $row->cmpname ?></option>		
-									<?php
-								}
+					$sql = "SELECT j0.idsoc, j0.cmpname, j0.identificador, j0.id_integra
+					FROM srgc as j0
+					Inner Join companiasxperfiles as j1 on j0.idsoc = j1.idcia
+					WHERE j0.activo = 'Y'
+					And j1.idperfil = '".$_SESSION["sudperfil"]."'"
+					;
+					$result = $conexionMysql->db->Execute($sql);
+					while ($row=$result->FetchNextObj())
+					{ 
+						if(isset($_SESSION["sudlogin"]) && $identificador <> '' ){
+							if( $row->id_integra == $identificador){
+								?>
+								<option value="<?= $row->id_integra ?>" selected><?= $row->cmpname ?></option>
+								<?php
 							}
 							else{
 								?>
-								<option value="<?= $row->id_integra ?>" ><?= $row->cmpname ?></option>
+								<option value="<?= $row->id_integra ?>" ><?= $row->cmpname ?></option>		
 								<?php
 							}
 						}
-						?>
-					</select>
+						else{
+							?>
+							<option value="<?= $row->id_integra ?>" ><?= $row->cmpname ?></option>
+							<?php
+						}
+					}
+					?>
+				</select>
 
-				</form>
+			</form>
+		</div>
+
+		<?php
+	}
+
+	$link = mysql_connect($hostname_cn_MySQL, $username_cn_MySQL, $password_cn_MySQL) or trigger_error(mysql_error(),E_USER_ERROR); 
+	mysql_select_db($database_cn_MySQL, $link) or die (mysql_error());
+	mysql_query("SET NAMES 'utf8'");
+
+	$sql  = "SELECT cardcode, cardname FROM ocrd ";
+	$sql .= " Where id_integra = '$identificador' And estado = 'A' And groupcode = '103'";
+	$sql .= " Order by cardname";
+
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$cliente[] = $row[cardcode];
+		$namecliente[] = $row[cardname];
+	}
+
+	$sql = "SELECT statusID, Name FROM oscs ";
+	$sql .="Where id_integra = '$identificador'";
+	$sql .="Order by Name";
+
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$statusID[] = $row[statusID];
+		$nameStatus[] = $row[Name];
+	}
+
+	$sql  = "SELECT  name FROM empleado ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by name";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$empleado[] = $row[name];
+	}
+
+	$sql  = "SELECT  name FROM osco ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by name";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$originID[] =$row[originID];
+		$origin[] = $row[name];
+	}
+
+	$sql  = "SELECT  U_NAME FROM ousr ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by U_NAME";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$assigneeID[] =$row[USERID];
+		$assignee[] = $row[U_NAME];
+	}		
+
+
+	$sql  = "SELECT  Name FROM oscp ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by Name";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$problemTypeID[] =$row[prblmTypID];
+		$problemType[] = $row[Name];
+	}		
+
+	$sql  = "SELECT  Name FROM osct ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by Name";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$callTypeID[] =$row[callTypeID];
+		$callType[] = $row[Name];
+		
+	}
+
+
+	$sql  = "SELECT CONCAT(firstName, ' ', middleName, ' ', lastName) AS Empleado   FROM ohem ";
+	$sql .= " Where id_integra = '$identificador'";
+	$sql .= " Order by firstName";
+	$result = mysql_query($sql,$link) or die(mysql_error());
+	while($row = mysql_fetch_assoc($result))
+	{
+		$empID[] =$row[empID];
+		$technician[] = $row[Empleado];
+		
+	}
+
+	?>
+	<span id="obligatorio">(*)</span> campos obligatorios
+	<?php
+	if ($identificador <> ''){
+		?>
+		<div class="header-container">
+			<header class="wrapper clearfix">
+				<h2 class="title">Formato SMC (Sistema de Mejora Continuo)</h1>
+				</header>
 			</div>
 
-			<?php
-		}
+			<div class="main-container">
+				<div class="main wrapper clearfix">
 
-		$link = mysql_connect($hostname_cn_MySQL, $username_cn_MySQL, $password_cn_MySQL) or trigger_error(mysql_error(),E_USER_ERROR); 
-		mysql_select_db($database_cn_MySQL, $link) or die (mysql_error());
-		mysql_query("SET NAMES 'utf8'");
+					<form name="form" id="formulario" action="" method="post" onsubmit="return validar();" enctype="multipart/form-data">
+						<input type="hidden" name="identificador" id="identificador" value="<?= $identificador; ?>" />
+						<article>
 
-		$sql  = "SELECT cardcode, cardname FROM ocrd ";
-		$sql .= " Where id_integra = '$identificador' And estado = 'A' And groupcode = '103'";
-		$sql .= " Order by cardname";
+							<section>
 
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$cliente[] = $row[cardcode];
-			$namecliente[] = $row[cardname];
-		}
+								<h4>Fecha Creación:  <?= date('d-m-Y'); ?></h4>
+								<h3>Datos del Evento</h3>
+								<label for="status1">Estado del Evento</label>
+								<select name="fstatus" id="status1" required>
+									<option value="-3" Selected>Abierto</option>
+									<option value="-1">Cerrado</option>
+								</select>
+								<label for="priority1">Prioridad</label>
+								<select name="fpriority" id="priority1" required>
+									<option value="L" selected>Baja</option>
+									<option value="M">Medio</option>
+									<option value="H">Alto</option>
+								</select>
 
-		$sql = "SELECT statusID, Name FROM oscs ";
-		$sql .="Where id_integra = '$identificador'";
-		$sql .="Order by Name";
+								<label for="customer1">Dueño del Proceso</label>
+								<select name="fcustomer" id="customer1" onchange="BuscarCli(1);" required>
+									<option></option>
+									<?php
+									foreach ($cliente as $key =>  $value) {
+										echo "<option value=\"$value\" id=\"$cliente[$key]\">".$value." - ".$namecliente[$key]."</option>\n";
+									}
+									?>
+								</select>
 
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$statusID[] = $row[statusID];
-			$nameStatus[] = $row[Name];
-		}
-
-		$sql  = "SELECT  name FROM empleado ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by name";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$empleado[] = $row[name];
-		}
-
-		$sql  = "SELECT  name FROM osco ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by name";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$originID[] =$row[originID];
-			$origin[] = $row[name];
-		}
-
-		$sql  = "SELECT  U_NAME FROM ousr ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by U_NAME";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$assigneeID[] =$row[USERID];
-			$assignee[] = $row[U_NAME];
-		}		
+								<label for="subject1">Nombre del Evento: </label>
+								<input type="text" name="fsubject" id="subject1" maxlength"200" size="65" />
 
 
-		$sql  = "SELECT  Name FROM oscp ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by Name";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$problemTypeID[] =$row[prblmTypID];
-			$problemType[] = $row[Name];
-		}		
+								<h4>Evento</h4>
+								<p><?php echo $assigneeID[]; ?></´p>
+								<label for="assignee1"> Jefe-Coord </label>
+								<select name="fassignee" id="assignee1" required>
+									<option></option>
+									<?php
+									foreach ($assigneeID as $key => $value) {
+										echo "<option value=\"$value\" id=\"$assigneeID[$key]\">".$assignee[$key]."</option>\n";
+									}
 
-		$sql  = "SELECT  Name FROM oscp ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by Name";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$problemTypeID[] =$row[prblmTypID];
-			$problemType[] = $row[Name];
-		
-		}		
+									?>											
+								</select>
+								<br>
+<!-- 								<label for="origin1">Actividad/Entrada  </label>
+								<select name="forigin" id="origin1" required>
+									<option></option>
+									<?php
 
+									foreach ($originID as $key => $value) {
+										echo "<option value=\"$value\" id=\"$originID[$key]\">".$origin[$key]."</option>\n";
+									}
 
-		$sql  = "SELECT  Name FROM osct ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by Name";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$callTypeID[] =$row[callTypeID];
-			$callType[] = $row[Name];
-		
-		}
+									?>								
+								</select>
+								<br>
 
+								<label for="problemType1">Ubicación</label>
+								<select name="fproblemType" id="problemType1" required>
+									<option></option>
+									<?php
+									foreach ($problemTypeID as $key => $value) {
+										echo "<option value=\"$value\" id=\"$problemTypeID[$key]\">".$problemType[$key]."</option>\n";
+									}
 
-		$sql  = "SELECT CONCAT(firstName, ' ', middleName, ' ', lastName) AS Empleado   FROM ohem ";
-		$sql .= " Where id_integra = '$identificador'";
-		$sql .= " Order by firstName";
-		$result = mysql_query($sql,$link) or die(mysql_error());
-		while($row = mysql_fetch_assoc($result))
-		{
-			$empID[] =$row[empID];
-			$technician[] = $row[Empleado];
-		
-		}
+									?>									
+								</select>
+								<br>								
+								<label for="callType1">Proceso</label>
+								<select name="fcallType" id="callType1" required>
+									<option></option>
+									<?php
+									foreach ($callTypeID as $key => $value) {
+										echo "<option value=\"$value\" id=\"$callTypeID[$key]\">".$callType[$key]."</option>\n";
+									}
 
-		?>
-		<span id="obligatorio">(*)</span> campos obligatorios
-		<?php
-		if ($identificador <> ''){
-			?>
+									?>									
+								</select>
+								<br>								
+								<label for="technician1"> Reportado Por: </label>
+								<select name="ftechnician" id="technician1" required>
+									<option></option>
+									<?php 
+									foreach($empID as $key => $value){
+										echo "<option value=\"$value\" id=\"$empID[$key]\">".$technician[$key]."</option>\n";															
+									}
+									?>
+								</select>
+								<br>					 -->																
+								<input type="hidden" name="identificador" value="<?= $identificador; ?>" />
+								<input class="boton_submit" type="submit" value="Crear" />
+								&nbsp; &nbsp; &nbsp;
+								<input class="boton_submit" type="button" value="Cancelar" onclick="javascript:location.href='<?= $_SERVER['HTTP_REFERER']; ?>';" />
+								&nbsp; &nbsp; &nbsp;
 
-			<div id="smc">
-				<table class="tabla_smc">
-					<tr>
-						<td class="subtitulo">
-							Formato  SMC
+							</section>
+							<footer>
+								<h3>article footer h3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+							</footer>
+						</article>
 
-						</td>
-					</tr>
-					<tr>
-						<td>
-
-							<form name="form" id="formulario" action="" method="post" onsubmit="return validar();"  enctype=multipart/form-data > 
-								<input type="hidden" name="identificador" id="identificador" value="<?= $identificador; ?>" />
-
-
-								<!--  INICIO CABECERA  -->
-								<table id="tabla">
-									<tr>
-										<td id="label1">
-											Dueño del proceso <span id="obligatorio">(*)</span>
-										</td>
-										<td id="campo1">
-											<select name="fcustomer" id="customer1" style="width:200px;" onchange="BuscarCli(1);">
-												<option></option>
-												<?php 
-												foreach ($cliente as $key => $value) {
-													echo "<option value=\"$value\" id=\"$cliente[$key]\">".$value." - " .$namecliente[$key]."</option>\n";  
-												}
-												?>
-											</select>
-										</td>
-										<td id = "label1">
-											Estado del Evento 
-										</td>
-										<td id="campo1">
-											<select name="fstatus" id="status1">
-												<option></option>
-												<?php
-												foreach ($statusID as $key => $value) {
-													echo "<option value=\"$value\" id=\"$nameStatus[$key]\">".$nameStatus[$key]."</option>\n";
-												}
-
-												?>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td id="label1">  
-										</td>
-										<td id="campo1"> 
-										</td>
-										<td id="label1">
-											Prioridad
-										</td>
-										<td id="campo1">
-											<select name="fpriority" id="priotity1">
-												<option value="L" selected>Baja</option>
-												<option value="M">Medio</option>
-												<option value="H">Alto</option>
-											</select>
-
-										</td>
-									</tr>
-									<tr>
-										<td id="label1">  
-										</td>
-										<td id="campo1"> 
-										</td>
-										<td id="label1">
-											Fecha de Creaci&oacute;n:  
-										</td>
-										<td id ="campo1" size="14" type="text" READONLY name="docdate1" title="dd-mm-yyyy"> 
-											<?= date('d-m-Y'); ?>
-										</td>
-									</tr>
-									<tr>
-										<td id="label1">
-											Nombre del Evento : 
-										</td>
-										<td id="campo1" colspan=5>
-											<input type="text" name="fsubject" maxlength="200" size="90" />
-										</td>
-									</tr>
-									<br>
-									<tr>
-										<table>
-											<tr>
-												<td id="label1">
-													Actividad/Entrada
-												</td>
-												<td id="campo1">
-													<select name="forigin" id="origin11">
-														<option></option>
-														<?php
-
-														foreach ($originID as $key => $value) {
-															echo "<option value=\"$value\" id=\"$originID[$key]\">".$origin[$key]."</option>\n";
-														}
-
-														?>														
+						<aside>
+							<h3>aside</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+						</aside>
+					</form>
+				</div> <!-- #main -->
+			</div> <!-- #main-container -->
 
 
-													</select>
-												</td>
-												<td id="label1">
-													Jefe-Coord
-												</td>
-												<td id="campo1">
-													<select name="fassignee" id="assignee1">
-														<option></option>
-														<?php
-														foreach ($assigneeID as $key => $value) {
-															echo "<option value=\"$value\" id=\"$assigneeID[$key]\">".$assignee[$key]."</option>\n";
-														}
-
-														?>														
 
 
-													</select>
-												</td>												
-											</tr>
-											<tr>
-												<td id ="label1">
-													Ubicación
-												</td>
-												<td id="campo1">
-													<select name="fproblemType" id="problemType1">
-														<option></option>
-														<?php
-														foreach ($problemTypeID as $key => $value) {
-															# code...
-															echo "<option value=\"$value\" id=\"$problemTypeID[$key]\">".$problemType[$key]."</option>\n";
-														}
 
-														?>
 
-													</select>
-												</td>
-											</tr>
-											<tr>
-												<td id ="label1">
-													Proceso
-												</td>
-												<td id="campo1">
-													<select name="fcallType" id="callType1">
-													<option></option>
-													<?php
-													foreach($callTypeID as $key => $value) {
-														echo "<option value=\"$value\" id=\"$callTypeID[$key]\">".$callType[$key]."</option>\n";
-													}
-
-													?>
-												</select>
-												</td>
-											</tr>
-											<tr>
-												<td id="label1">
-													Reportado por: 
-												</td>
-												<td id="campo1">
-													<select name="ftechnician" id="technician1">
-														<option></option>
-														<?php 
-														foreach($empID as $key => $value){
-														echo "<option value=\"$value\" id=\"$empID[$key]\">".$technician[$key]."</option>\n";															
-														}
-														?>
-													</select>
-												</td>
-
-											</tr>
-										</table>
-									</tr>
-<!-- 								<tr>
-									<td id="label1" colspan=5>
-										Descripción del Evento
-									</td>
-
-								</tr>
-								<tr>
-									<td  id="descriptiontxt" colspan="5">
-										<textarea style="width:90%; height:100px;" name="fdescrption">Inserte la descripcion del evento aqui</textarea>
-									</td>
-
-								</tr> -->
-							</table>
-							<!--  FIN CABECERA  -->
-							<br/>
-
-						</td>
-					</tr>
-<!-- 			<tr>
-			<td width="100%">
-				<table width="90%">
-					<tr>
-						<td width="20%" valign="top">
-							Comentarios: &nbsp; &nbsp; &nbsp;
-						</td>
-						<td >
-							<textarea name="comentarios" rows="5" cols="40" onKeyUp="return maximaLongitud(this,100)"></textarea>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>-->
-		<tr> 
-			<td width="80%">
-				
-				<input type="hidden" name="identificador" value="<?= $identificador; ?>" />
-				<input class="boton_submit" type="submit" value="Crear" />
-				&nbsp; &nbsp; &nbsp;
-				<input class="boton_submit" type="button" value="Cancelar" onclick="javascript:location.href='<?= $_SERVER['HTTP_REFERER']; ?>';" />
-				&nbsp; &nbsp; &nbsp;
 <!-- 					Total Documento &nbsp; $
 				<input class="campo_texto" type="text" id="totaldoc" size="12" readonly />
 				&nbsp; &nbsp; USD
 				<input class="campo_texto" type="text" id="totaldocext" size="12" readonly /> -->
-			</td>
-		</tr>
-	</form>	
-</table>
-</div>
 
-<?php	
-}
-?>
-<div id="cargando_datos"></div>
-<table border="0" align="center">
-	<tr>
-		<td align="center" onClick="javascript:location.href='menu_izquierdo.php';" >
-			<img src="<? echo $gloRutaPublica . "/imagenes/volver.png"; ?>" width="40" height="50" alt="Volver" style="cursor:pointer">
-		</td>
-	</tr>
-</table>	
-<?php 
-include "extranet_pie.php";  ?>
 
-</body>
-</html>
+
+
+
+				<?php	
+			}
+			?>
+			<div id="cargando_datos"></div>
+			<table border="0" align="center">
+				<tr>
+					<td align="center" onClick="javascript:location.href='menu_izquierdo.php';" >
+						<img src="<? echo $gloRutaPublica . "/imagenes/volver.png"; ?>" width="40" height="50" alt="Volver" style="cursor:pointer">
+					</td>
+				</tr>
+			</table>	
+			<?php 
+			include "extranet_pie.php";  ?>
+
+		</body>
+		</html>
